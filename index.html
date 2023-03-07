@@ -9,6 +9,45 @@
     <title>Fake Form</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="container-left">
+            <h1>Embark upon a once-in-a-lifetime adventure</h1>
+            <p>Image by <a href="https://unsplash.com/@tyvdh">Tyler van der Hoeven</a>
+             on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        <div class="container-right">
+            <h2>Disclaimer: This is not an actual online service!</h2>
+            <form action="" method="get">
+                <div class="form-input">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="form-input">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-input">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone_num">
+                </div>
+                <div class="form-input">
+                    <label for="psw">Password</label>
+                    <input type="password" id="psw" name="user_password" required>
+                </div>
+                <div class="form-input">
+                    <label for="confirm_psw">Confirm password</label>
+                    <input type="password" id="confirm_psw" name="confirm_password" required>
+                </div>
+                <div class="form-input">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="">Log</a> in.</p>
+        </div>
+    </div>
 </body>
 </html>
