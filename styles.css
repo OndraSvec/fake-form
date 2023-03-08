@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --input-purple: #4e54c8;
+}
+
 html {
     min-height: 100vh;
 
