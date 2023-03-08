@@ -19,39 +19,39 @@
             <h2>Fields marked with an asterisk (*) are required.</h2>
             <form action="" method="get">
                 <div class="form-input">
-                    <input type="text" id="fname" name="fname">
-                    <label for="fname" class="label-name">
-                        <span class="label-content-name">First name</span>
+                    <input type="text" id="fname" name="fname" value="" autocomplete="off">
+                    <label for="fname" class="label-name" id="fname-LN">
+                        <span class="label-content-name" id="fname-LCN">First name</span>
                     </label>
                 </div>
                 <div class="form-input">
-                    <input type="text" id="lname" name="lname">
-                    <label for="lname" class="label-name">
-                        <span class="label-content-name">Last name</span>
+                    <input type="text" id="lname" name="lname" value="" autocomplete="off">
+                    <label for="lname" class="label-name" id="lname-LN">
+                        <span class="label-content-name" id="lname-LCN">Last name</span>
                     </label>
                 </div>
                 <div class="form-input">
-                    <input type="tel" id="phone" name="phone_num">
-                    <label for="phone" class="label-name">
-                        <span class="label-content-name">Phone number</span>
+                    <input type="tel" id="phone" name="phone_num" value="" autocomplete="off">
+                    <label for="phone" class="label-name" id="phone-LN">
+                        <span class="label-content-name" id="phone-LCN">Phone number</span>
                     </label>
                 </div>
                 <div class="form-input">
-                    <input type="email" id="email" name="email" required>
-                    <label for="email" class="label-name">
-                        <span class="label-content-name">Email*</span>
+                    <input type="email" id="email" name="email" value="" autocomplete="off" required>
+                    <label for="email" class="label-name" id="email-LN">
+                        <span class="label-content-name red" id="email-LCN">Email*</span>
                     </label>
                 </div>
                 <div class="form-input">
-                    <input type="password" id="psw" name="user_password" required>
-                    <label for="psw" class="label-name">
-                        <span class="label-content-name">Password*</span>
+                    <input type="password" id="psw" name="user_password" value="" autocomplete="off" required>
+                    <label for="psw" class="label-name" id="psw-LN">
+                        <span class="label-content-name red" id="psw-LCN">Password*</span>
                     </label>
                 </div>
                 <div class="form-input">
-                    <input type="password" id="confirm_psw" name="confirm_password" required>
-                    <label for="confirm_psw" class="label-name">
-                        <span class="label-content-name">Confirm password*</span>
+                    <input type="password" id="confirm_psw" name="confirm_password" value="" autocomplete="off" required>
+                    <label for="confirm_psw" class="label-name" id="confirm_psw-LN">
+                        <span class="label-content-name red" id="confirm_psw-LCN">Confirm password*</span>
                     </label>
                 </div>
                 <button id="create-acc-btn" type="submit">Create Account</button>
