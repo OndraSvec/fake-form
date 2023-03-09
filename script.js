@@ -20,6 +20,10 @@ inputs.forEach(input => input.addEventListener('focusin', handleFocusIn));
 
 inputs.forEach(input => input.addEventListener('focusout', handleFocusOut));
 
+const btn = document.querySelector('button');
+const form = document.querySelector('form');
+form.addEventListener('submit', handleFormSubmit);
+
 function handleUserInput(e) {
     switch (e.target.id) {
         case 'fname':
@@ -151,5 +155,17 @@ function handleFocusOut(e) {
         break;
         default:
             return;
+    }
+}
+
+function handleFormSubmit(e) {
+    if (!email.validity.valid
+        || !psw.validity.valid
+        || !confirm_psw.validity.valid
+        || psw.value !== confirm_psw.value) {
+        e.preventDefault();
+    } else {
+        /*alert('Thanks for signing up!');*/
+        btn.textContent = 'Thanks!';
     }
 }
