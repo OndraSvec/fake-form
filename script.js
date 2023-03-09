@@ -166,11 +166,5 @@ function handleFormSubmit(e) {
         e.preventDefault();
     } else {
         btn.textContent = 'Thanks!';
-        fname.value = "";
-        lname.value = "";
-        phone.value = "";
-        email.value = "";
-        psw.value = "";
-        confirm_psw.value = "";
     }
 }
