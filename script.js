@@ -140,10 +140,12 @@ function handleFocusOut(e) {
             confirm_psw_LCN.classList.remove('active-invalid', 'active');
             confirm_psw_LCN.setAttribute('style', 'color: red;');
             } else if (e.target.value !== "" || e.target.value !== null) {
-                if (e.target.checkValidity() === true) {
-                confirm_psw_LCN.setAttribute('style', 'color: var(--input-purple);');
-                } else if (e.target.checkValidity() === false) {
-                confirm_psw_LCN.setAttribute('style', 'color: red;');
+                if (e.target.checkValidity() === false) {
+                    confirm_psw_LCN.setAttribute('style', 'color: red;');
+                } else if (e.target.value !== psw.value) {
+                        confirm_psw_LCN.setAttribute('style', 'color: red;');
+                } else if (e.target.checkValidity() === true) {
+                    confirm_psw_LCN.setAttribute('style', 'color: var(--input-purple);');
                 }
             }
         break;
