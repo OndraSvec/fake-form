@@ -9,6 +9,7 @@
 
 :root {
     --input-purple: #4e54c8;
+    --gradient-purple: linear-gradient(to right, #4e54c8, #8f94fb);
 }
 
 html {
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    background: var(--gradient-purple);
 
     flex-grow: 1;
     
@@ -62,10 +63,22 @@ body {
 }
 
 .container-left > p {
+    background-color: rgba(255, 255, 255, 0.85);
+
     text-align: center;
 
     margin-top: 10rem;
-    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.container-left > p > a,
+.container-left > p > a:visited {
+    text-decoration: none;
+
+    color: var(--input-purple);
+}
+
+.container-left > p > a:hover {
+    text-decoration: underline;
 }
 
 .container-right {    
@@ -163,6 +176,25 @@ form {
     font-size: 0.9rem;
 
     color: red;
+}
+
+#create-acc-btn {
+    background: var(--gradient-purple);
+    color: white;
+
+    font-size: 1.125rem;
+
+    border-radius: 0.25rem;
+    border: none;
+    outline: none;
+}
+
+#create-acc-btn:hover {
+    cursor: pointer;
+}
+
+#create-acc-btn:active {
+    scale: 0.975;
 }
 
 @media screen and (max-width: 400px) {
