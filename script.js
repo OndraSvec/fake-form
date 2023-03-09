@@ -165,7 +165,12 @@ function handleFormSubmit(e) {
         || psw.value !== confirm_psw.value) {
         e.preventDefault();
     } else {
-        /*alert('Thanks for signing up!');*/
         btn.textContent = 'Thanks!';
+        fname.value = "";
+        lname.value = "";
+        phone.value = "";
+        email.value = "";
+        psw.value = "";
+        confirm_psw.value = "";
     }
 }
