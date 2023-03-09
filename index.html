@@ -43,13 +43,29 @@
                     </label>
                 </div>
                 <div class="form-input">
-                    <input type="password" id="psw" name="user_password" value="" autocomplete="off" required>
+                    <input
+                            type="password"
+                            id="psw"
+                            name="user_password"
+                            value=""
+                            autocomplete="off"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            title="Please enter at least 8 characters with at least one uppercase and one lowercase character, one number and one special character."
+                            required>
                     <label for="psw" class="label-name" id="psw-LN">
                         <span class="label-content-name red" id="psw-LCN">Password*</span>
                     </label>
                 </div>
                 <div class="form-input">
-                    <input type="password" id="confirm_psw" name="confirm_password" value="" autocomplete="off" required>
+                    <input
+                            type="password"
+                            id="confirm_psw"
+                            name="confirm_password"
+                            value=""
+                            autocomplete="off"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            title="Please enter at least 8 characters with at least one uppercase and one lowercase character, one number and one special character. Also make sure to match your password inputs."
+                            required>
                     <label for="confirm_psw" class="label-name" id="confirm_psw-LN">
                         <span class="label-content-name red" id="confirm_psw-LCN">Confirm password*</span>
                     </label>
