@@ -145,14 +145,6 @@ form {
     color: red;
 }
 
-.form-input input:focus + .label-name .label-content-name{
-    transform: translateY(-90%);
-
-    font-size: 0.9rem;
-
-    color: var(--input-purple);
-}
-
 .form-input input:focus + .label-name::after {
     transform: translateX(0%);
 }
@@ -169,6 +161,8 @@ form {
     transform: translateY(-90%);
 
     font-size: 0.9rem;
+
+    color: red;
 }
 
 @media screen and (max-width: 400px) {
