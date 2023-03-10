@@ -199,13 +199,13 @@ form {
 
 @media screen and (max-width: 400px) {
     .container-left h1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .container-left p {
         font-size: 0.8rem;
     }
     .container-right h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
